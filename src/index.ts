@@ -1,0 +1,73 @@
+export { ClawpumpClient } from "./client.js";
+
+// Types — request params
+export type {
+  ClawpumpClientConfig,
+  GetPriceParams,
+  SwapQuoteParams,
+  SwapExecuteParams,
+  GetPortfolioParams,
+  TopMoversParams,
+  YieldParams,
+  MacroSignalsParams,
+  AnomaliesParams,
+  GetIndicatorsParams,
+  IndicatorType,
+  CreateAgentParams,
+  UpdateAgentParams,
+  SendMessageParams,
+  GetMessagesParams,
+  CreateAutomationParams,
+  SkillSlug,
+  StrategyPreset,
+} from "./types.js";
+
+// Types — responses
+export type {
+  ApiMeta,
+  PriceResponse,
+  SwapRoute,
+  SwapQuoteResponse,
+  SwapExecuteResponse,
+  TokenHolding,
+  PortfolioResponse,
+  TopMover,
+  TopMoversResponse,
+  YieldOpportunity,
+  YieldResponse,
+  MacroSignal,
+  MacroSignalsResponse,
+  Anomaly,
+  AnomaliesResponse,
+  RSIValue,
+  EMAValue,
+  SMAValue,
+  MACDValue,
+  IndicatorValue,
+  IndicatorsResponse,
+  AgentResponse,
+  AgentListResponse,
+  AgentStatus,
+  ChatMessageResponse,
+  MessageEntry,
+  MessagesResponse,
+  SkillInfo,
+  SkillCatalogResponse,
+  AutomationStatus,
+  AutomationResponse,
+  AutomationListResponse,
+} from "./types.js";
+
+// Errors
+export {
+  ClawpumpError,
+  AuthenticationError,
+  ForbiddenError,
+  NotFoundError,
+  ValidationError,
+  RateLimitError,
+  InsufficientLiquidityError,
+  ServerError,
+  NetworkError,
+  TimeoutError,
+} from "./errors.js";
